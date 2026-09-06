@@ -1,0 +1,99 @@
+{
+  "Amazon": {
+    "latest_fiscal_year": 2025,
+    "flags": [
+      {
+        "id": "capex_surge",
+        "severity": "medium",
+        "message": "Capex consumed 94.5% of operating cash flow (prior year 71.6%)",
+        "evidence": {
+          "capex_to_cfo_now_pct": 94.5,
+          "capex_to_cfo_prior_pct": 71.6,
+          "capex_bn": 131.8,
+          "fcf_bn": 7.7
+        }
+      }
+    ]
+  },
+  "Microsoft": {
+    "latest_fiscal_year": 2026,
+    "flags": [
+      {
+        "id": "inventory_build",
+        "severity": "medium",
+        "message": "Inventory grew 48.9% vs revenue 17.8%",
+        "evidence": {
+          "inventory_growth_pct": 48.9,
+          "revenue_growth_pct": 17.8
+        }
+      },
+      {
+        "id": "capex_surge",
+        "severity": "medium",
+        "message": "Capex consumed 63.4% of operating cash flow (prior year 47.4%)",
+        "evidence": {
+          "capex_to_cfo_now_pct": 63.4,
+          "capex_to_cfo_prior_pct": 47.4,
+          "capex_bn": 115.9,
+          "fcf_bn": 67.0
+        }
+      }
+    ]
+  },
+  "Nvidia": {
+    "latest_fiscal_year": 2026,
+    "flags": [
+      {
+        "id": "gross_margin_drop",
+        "severity": "medium",
+        "message": "Gross margin fell 3.9 pts to 71.1%",
+        "evidence": {
+          "gross_margin_now_pct": 71.1,
+          "gross_margin_prior_pct": 75.0
+        }
+      },
+      {
+        "id": "inventory_build",
+        "severity": "medium",
+        "message": "Inventory grew 112.3% vs revenue 65.5%",
+        "evidence": {
+          "inventory_growth_pct": 112.3,
+          "revenue_growth_pct": 65.5
+        }
+      },
+      {
+        "id": "share_count_shrinking",
+        "severity": "positive",
+        "message": "Diluted share count fell 1.2% (buybacks)",
+        "evidence": {
+          "share_change_pct": -1.2
+        }
+      }
+    ]
+  },
+  "Tesla": {
+    "latest_fiscal_year": 2025,
+    "flags": [
+      {
+        "id": "revenue_decline",
+        "severity": "high",
+        "message": "Revenue fell 2.9% in FY2025",
+        "evidence": {
+          "revenue_growth_pct": -2.9,
+          "revenue_bn": 94.8,
+          "prior_revenue_bn": 97.7
+        }
+      },
+      {
+        "id": "fcf_outgrowing_revenue",
+        "severity": "positive",
+        "message": "Free cash flow grew 73.7% vs revenue -2.9%",
+        "evidence": {
+          "fcf_growth_pct": 73.7,
+          "revenue_growth_pct": -2.9,
+          "fcf_bn": 6.2
+        }
+      }
+    ]
+  }
+}
