@@ -2,6 +2,8 @@
 
 An AI research agent that reads SEC filings, flags what changed, and writes an investment-committee-style note — with every figure traceable to a 10-K.
 
+![Auto-Analyst interface](screenshot.png)
+
 Built to answer a specific question: can an LLM produce equity-research output that a professional would trust? The answer here is "only if the model isn't allowed to invent numbers." So the numbers come from filings, the ratios are computed in code, the red flags are rule-based, and the model's job is to reason and write. A second model call then audits the note against the source data before anyone reads it.
 
 Currently covers Tesla, Nvidia, Microsoft and Amazon using six years of annual 10-K data.
@@ -62,3 +64,4 @@ Annual data only, US filers only, no market prices or valuation, no segment deta
 - MD&A and risk-factor text, diffed year over year, so the note can cite what management changed in its own language
 - Peer comparison using the EDGAR frames API (one metric across all filers)
 - EU coverage via ESEF filings, which use the same XBRL approach under IFRS
+
